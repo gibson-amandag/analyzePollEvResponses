@@ -13,6 +13,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       p("Select CSVs exported from PollEverywhere for analysis"),
+      a("Download example CSV Files", href = "DemoCSVs.zip"),
       fileInput("files", "Upload Files",
                 multiple = TRUE,
                 accept = c("text/csv", ".csv")),
